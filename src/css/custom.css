@@ -25,16 +25,29 @@
 }
 
 .navbar {
-  background-color: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(20px) !important;
-  -webkit-backdrop-filter: blur(20px);
+  background-color: transparent;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: none;
   padding: 0;
+  position: relative;
+}
+
+/* backdrop-filter auf Pseudo-Element, damit fixed-Kinder korrekt positioniert bleiben */
+.navbar::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  z-index: -1;
+}
+
+[data-theme='light'] .navbar::before {
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 [data-theme='light'] .navbar {
-  background-color: rgba(255, 255, 255, 0.7);
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
@@ -85,11 +98,49 @@
 @media (max-width: 996px) {
   .navbar__inner {
     padding: 0 24px;
+    max-width: 100%;
   }
-}
 
-@media (max-width: 480px) {
-  .navbar__inner {
-    padding: 0 16px;
+  /* Logo links, Hamburger rechts */
+  .navbar__items:first-child {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar__brand {
+    order: 1;
+  }
+
+  .navbar__toggle {
+    order: 2;
+    margin-left: auto;
+  }
+
+  /* Sidebar: volle Breite, Höhe nach Inhalt */
+  .navbar-sidebar {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Beide Panels nebeneinander verhindern — Slide-Mechanismus von Docusaurus */
+  .navbar-sidebar__items {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .navbar-sidebar__item {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Logo im Sidebar-Header ausblenden */
+  .navbar-sidebar .navbar__brand {
+    display: none;
+  }
+
+  /* Keine horizontale Scrollbar */
+  html, body {
+    overflow-x: hidden;
   }
 }

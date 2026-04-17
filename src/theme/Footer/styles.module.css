@@ -111,7 +111,7 @@
 
 @media (max-width: 996px) {
   .footerInner {
-    padding: 0 24px;
+    padding: 30px 24px;
   }
 
   .topRow {
@@ -126,7 +126,7 @@
 
 @media (max-width: 480px) {
   .footerInner {
-    padding: 0 16px;
+    padding: 30px 16px;
   }
 
   .brandName {
