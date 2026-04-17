@@ -37,8 +37,8 @@ jobs:
           file: Dockerfile
           push: true
           tags: | 
-            ghcr.io/ensslinadrian/adrian-portfolio-docusaurus:latest
-            ghcr.io/ensslinadrian/adrian-portfolio-docusaurus:${{ github.sha }}
+            ghcr.io/ensslinadrian/portfolio-docusaurus:latest
+            ghcr.io/ensslinadrian/portfolio-docusaurus:${{ github.sha }}
 
 
       - name: Create and Copy .env to VM
