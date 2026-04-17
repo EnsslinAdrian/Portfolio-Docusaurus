@@ -1,0 +1,22 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.projectsSidebar.category.Backend": {
+    "message": "Backend",
+    "description": "The label for category 'Backend' in sidebar 'projectsSidebar'"
+  },
+  "sidebar.projectsSidebar.category.DevSecOps": {
+    "message": "DevSecOps",
+    "description": "The label for category 'DevSecOps' in sidebar 'projectsSidebar'"
+  },
+  "sidebar.projectsSidebar.category.Frontend": {
+    "message": "Frontend",
+    "description": "The label for category 'Frontend' in sidebar 'projectsSidebar'"
+  },
+  "sidebar.projectsSidebar.category.Websites": {
+    "message": "Websites",
+    "description": "The label for category 'Websites' in sidebar 'projectsSidebar'"
+  }
+}

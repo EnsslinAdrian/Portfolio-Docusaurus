@@ -1,0 +1,22 @@
+services:
+
+  frontend:
+    image: ghcr.io/ensslinadrian/adrian-portfolio-docusaurus:latest
+    container_name: adrian-portfolio-docusaurus
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    environment:
+      - VIRTUAL_HOST=${FRONTEND_VIRTUAL_HOST}
+      - VIRTUAL_PORT=${FRONTEND_VIRTUAL_PORT}
+      - LETSENCRYPT_HOST=${FRONTEND_VIRTUAL_HOST}
+      - LETSENCRYPT_EMAIL=${DEFAULT_FROM_EMAIL}
+    networks:
+      - proxy
+
+
+
+networks:
+  proxy:
+    external: true

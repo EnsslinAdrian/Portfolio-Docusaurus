@@ -1,0 +1,226 @@
+.connectSection {
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.customContainer {
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.textColumn {
+  text-align: left;
+  padding-right: 2rem;
+}
+
+.sectionBadge {
+  display: inline-flex;
+  font-family: var(--ifm-font-family-monospace);
+  padding: 6px 16px;
+  background: rgba(var(--ifm-color-primary-rgb), 0.08);
+  color: var(--ifm-color-primary);
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(var(--ifm-color-primary-rgb), 0.2);
+}
+
+.sectionTitle {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+
+.sectionSubtitle {
+  font-size: 1.25rem;
+  color: var(--ifm-color-emphasis-800);
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+.statusWrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(39, 201, 63, 0.05);
+  border: 1px solid rgba(39, 201, 63, 0.2);
+  padding: 8px 16px;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.statusDot {
+  width: 10px;
+  height: 10px;
+  background-color: #27c93f;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #27c93f;
+  animation: pulseDot 2s infinite;
+}
+
+.statusText {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #27c93f;
+}
+
+.linksColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.contactRow {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  text-decoration: none !important;
+  color: inherit !important;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.contactRow:hover {
+  background: rgba(var(--ifm-color-primary-rgb), 0.05);
+  border-color: var(--ifm-color-primary);
+  transform: translateX(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.iconWrapper {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  margin-right: 1.5rem;
+  color: var(--ifm-color-primary);
+  transition: all 0.3s ease;
+}
+
+.contactRow:hover .iconWrapper {
+  background: var(--ifm-color-primary);
+  color: #fff;
+  box-shadow: 0 0 15px rgba(var(--ifm-color-primary-rgb), 0.4);
+}
+
+.iconWrapper svg {
+  width: 22px;
+  height: 22px;
+}
+
+.linkContent {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.linkTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--ifm-color-emphasis-900);
+  margin-bottom: 0.2rem;
+}
+
+.linkSubtitle {
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.arrowWrapper {
+  color: var(--ifm-color-emphasis-500);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.arrowWrapper svg {
+  width: 20px;
+  height: 20px;
+}
+
+.contactRow:hover .arrowWrapper {
+  color: var(--ifm-color-primary);
+  transform: translateX(5px);
+}
+
+@keyframes pulseDot {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(39, 201, 63, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(39, 201, 63, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(39, 201, 63, 0); }
+}
+
+[data-theme='light'] .contactRow {
+  background: rgba(255, 255, 255, 0.7);
+  border-color: rgba(0, 0, 0, 0.08);
+}
+[data-theme='light'] .contactRow:hover {
+  background: rgba(var(--ifm-color-primary-rgb), 0.03);
+}
+[data-theme='light'] .iconWrapper {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 996px) {
+  .connectSection {
+    padding: 60px 0;
+  }
+
+  .customContainer {
+    padding: 0 24px;
+  }
+
+  .textColumn {
+    padding-right: 0;
+    margin-bottom: 3rem;
+  }
+
+  .sectionTitle {
+    font-size: 2.8rem;
+  }
+
+  .contactRow:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .connectSection {
+    padding: 48px 0;
+  }
+
+  .customContainer {
+    padding: 0 16px;
+  }
+
+  .sectionTitle {
+    font-size: 2.2rem;
+  }
+
+  .sectionSubtitle {
+    font-size: 1.1rem;
+  }
+
+  .contactRow {
+    padding: 1.2rem;
+  }
+
+  .iconWrapper {
+    width: 38px;
+    height: 38px;
+    margin-right: 1rem;
+  }
+
+  .linkTitle {
+    font-size: 1rem;
+  }
+}
