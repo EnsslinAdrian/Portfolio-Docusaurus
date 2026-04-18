@@ -38,5 +38,5 @@ Eine vollständige Live-Demonstration — von der Identifikation der Angriffsfl�
 
 Die detaillierten Exploitation Steps, Payloads und Screenshots sind im GitHub-Repository dokumentiert:
 
-<!-- [GitHub — OWASP Juice Shop Challenges](https://github.com/EnsslinAdrian/owasp-juice-shop/blob/main/Injection/NOSQL_DOS.md) -->
+{/* [GitHub — OWASP Juice Shop Challenges](https://github.com/EnsslinAdrian/owasp-juice-shop/blob/main/Injection/NOSQL_DOS.md) */}
 [GitHub — OWASP Juice Shop Challenges](https://github.com/EnsslinAdrian/owasp-juice-shop/blob/feature/Injection/NOSQL_DOS.md)

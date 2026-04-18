@@ -13,7 +13,7 @@ Mehrere eigene Projekte. Eine Menge Nächte.
 
 Und jetzt halte ich mein DevSecOps-Zertifikat in den Händen.
 
-<!-- truncate -->
+{/* truncate */}
 
 ---
 

@@ -1,4 +1,7 @@
 :root {
+  --ifm-navbar-height: 60px;
+  --ifm-container-width: 1140px;
+  --ifm-container-width-xl: 1400px;
   --ifm-color-primary: #3b82f6;
   --ifm-color-primary-dark: #2563eb;
   --ifm-color-primary-darker: #1d4ed8;
@@ -24,41 +27,18 @@
   --ifm-background-color: #0b0f1a;
 }
 
-.navbar {
-  background-color: transparent;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: none;
-  padding: 0;
-  position: relative;
-}
-
-/* backdrop-filter auf Pseudo-Element, damit fixed-Kinder korrekt positioniert bleiben */
-.navbar::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  z-index: -1;
-}
-
-[data-theme='light'] .navbar::before {
-  background-color: rgba(255, 255, 255, 0.7);
-}
-
-[data-theme='light'] .navbar {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-}
-
 .navbar__inner {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100%;
-  max-width: var(--ifm-container-width);
-  padding: 0px 50px;
-  margin: auto;
+  display: none;
+}
+
+/* Reset Docusaurus Infima-Styles die durch die .navbar Klasse kommen */
+nav.navbar {
+  padding: 0 !important;
+  height: auto !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  display: block !important;
+  align-items: initial !important;
 }
 
 
@@ -68,6 +48,7 @@
   min-height: 100vh;
   background: transparent;
   isolation: isolate;
+  padding: 0 16px;
 }
 
 .glass-card {
@@ -89,58 +70,29 @@
   font-weight: 800;
 }
 
+/* Docs & Blog: Breite begrenzen, top spacing hinzufügen */
+.main-wrapper {
+  max-width: var(--ifm-container-width);
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2rem 34px 3rem 34px;
+}
+
 @media (min-width: 1440px) {
-  .navbar__inner {
+  .main-wrapper {
     max-width: var(--ifm-container-width-xl);
   }
 }
 
 @media (max-width: 996px) {
-  .navbar__inner {
-    padding: 0 24px;
-    max-width: 100%;
+  .main-wrapper {
+    padding: 1.5rem 24px 2rem;
   }
+}
 
-  /* Logo links, Hamburger rechts */
-  .navbar__items:first-child {
-    flex: 1;
-    display: flex;
-    align-items: center;
-  }
-
-  .navbar__brand {
-    order: 1;
-  }
-
-  .navbar__toggle {
-    order: 2;
-    margin-left: auto;
-  }
-
-  /* Sidebar: volle Breite, Höhe nach Inhalt */
-  .navbar-sidebar {
-    width: 100%;
-    height: auto;
-  }
-
-  /* Beide Panels nebeneinander verhindern — Slide-Mechanismus von Docusaurus */
-  .navbar-sidebar__items {
-    overflow: hidden;
-    width: 100%;
-  }
-
-  .navbar-sidebar__item {
-    min-width: 100%;
-    box-sizing: border-box;
-  }
-
-  /* Logo im Sidebar-Header ausblenden */
-  .navbar-sidebar .navbar__brand {
-    display: none;
-  }
-
-  /* Keine horizontale Scrollbar */
-  html, body {
-    overflow-x: hidden;
+@media (max-width: 480px) {
+  .main-wrapper {
+    padding: 1rem 16px 2rem;
   }
 }

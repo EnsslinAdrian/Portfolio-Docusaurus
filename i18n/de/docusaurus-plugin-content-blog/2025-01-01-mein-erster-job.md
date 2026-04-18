@@ -13,7 +13,7 @@ Einen vollständigen E-Commerce-Shop entwickeln. Alleine. Von Null.
 
 Ich hatte kaum Zeit, mich zu freuen. Denn direkt danach kam die Angst.
 
-<!-- truncate -->
+{/* truncate */}
 
 ---
 

@@ -16,7 +16,7 @@ Und dann stand ich vor einer Frage.
 
 ![Canavs Planung](/img/blog/2025/20250903_172203.jpg)
 
-<!-- truncate -->
+{/* truncate */}
 
 ---
 

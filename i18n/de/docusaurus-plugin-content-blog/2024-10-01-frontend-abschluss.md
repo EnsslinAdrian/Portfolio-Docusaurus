@@ -14,7 +14,7 @@ Es ist alles andere als das.
 
 ![Frontend Zertifikat](/img/blog/2024/20250903_173723.jpg)
 
-<!-- truncate -->
+{/* truncate */}
 
 ---
 

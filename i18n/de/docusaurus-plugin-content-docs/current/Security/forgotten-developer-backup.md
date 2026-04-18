@@ -40,5 +40,5 @@ Eine vollständige Live-Demonstration — von der Entdeckung des FTP-Verzeichnis
 
 Die detaillierten Exploitation Steps, Payloads und Screenshots sind im GitHub-Repository dokumentiert:
 
-<!-- [GitHub — OWASP Juice Shop Challenges](https://github.com/EnsslinAdrian/owasp-juice-shop/blob/main/Sensitive_Data_Exposure/FORGOTTEN_DEVELOPER_BACKUP.md) -->
+{/* [GitHub — OWASP Juice Shop Challenges](https://github.com/EnsslinAdrian/owasp-juice-shop/blob/main/Sensitive_Data_Exposure/FORGOTTEN_DEVELOPER_BACKUP.md) */}
 [GitHub — OWASP Juice Shop Challenges](https://github.com/EnsslinAdrian/owasp-juice-shop/blob/feature/Sensitive_Data_Exposure/FORGOTTEN_DEVELOPER_BACKUP.md)

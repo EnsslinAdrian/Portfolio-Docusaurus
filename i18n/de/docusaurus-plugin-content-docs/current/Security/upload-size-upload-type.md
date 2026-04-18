@@ -38,5 +38,5 @@ Eine vollständige Live-Demonstration — von der Vorbereitung der Testdateien b
 
 Die detaillierten Exploitation Steps, Payloads und Screenshots sind im GitHub-Repository dokumentiert:
 
-<!-- [GitHub — OWASP Juice Shop Challenges](https://github.com/EnsslinAdrian/owasp-juice-shop/blob/main/Improper_Input_Validation/UPLOAD_SIZE.md) -->
+{/* [GitHub — OWASP Juice Shop Challenges](https://github.com/EnsslinAdrian/owasp-juice-shop/blob/main/Improper_Input_Validation/UPLOAD_SIZE.md) */}
 [GitHub — OWASP Juice Shop Challenges](https://github.com/EnsslinAdrian/owasp-juice-shop/blob/feature/Improper_Input_Validation/UPLOAD_SIZE.md)

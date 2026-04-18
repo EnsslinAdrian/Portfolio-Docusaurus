@@ -51,6 +51,8 @@ export default function Projects(): React.ReactNode {
       const textCol = row.querySelector(`.${styles.textCol}`);
       const isEven = i % 2 !== 0;
 
+      if (!imgCol || !textCol) return;
+
       gsap.fromTo(imgCol,
         { opacity: 0, x: isEven ? 60 : -60 },
         {

@@ -13,7 +13,7 @@ Ich verstand Syntax. Ich konnte Aufgaben lösen. Aber wenn ich ein echtes Projek
 vor mir hatte, war ich verloren. Die Lücke zwischen "Aufgaben lösen" und
 "etwas Eigenes bauen" war riesig.
 
-<!-- truncate -->
+{/* truncate */}
 
 Also probierte ich etwas Ungewöhnliches.
 

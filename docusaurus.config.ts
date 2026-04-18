@@ -41,6 +41,7 @@ const config: Config = {
       de: {
         label: 'Deutsch',
         htmlLang: 'de-DE',
+        path: 'de',
       },
     },
   },

@@ -38,5 +38,5 @@ Eine vollständige Live-Demonstration — vom Abfangen des Requests bis zum erfo
 
 Die detaillierten Exploitation Steps, Payloads und Screenshots sind im GitHub-Repository dokumentiert:
 
-<!-- [GitHub — OWASP Juice Shop Challenges](https://github.com/EnsslinAdrian/owasp-juice-shop/blob/main/Broken_Access_Control/MANIPULATE_BASKET.md) -->
+{/* [GitHub — OWASP Juice Shop Challenges](https://github.com/EnsslinAdrian/owasp-juice-shop/blob/main/Broken_Access_Control/MANIPULATE_BASKET.md) */}
 [GitHub — OWASP Juice Shop Challenges](https://github.com/EnsslinAdrian/owasp-juice-shop/blob/feature/Broken_Access_Control/MANIPULATE_BASKET.md)

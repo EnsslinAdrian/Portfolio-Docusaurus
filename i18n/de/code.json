@@ -442,5 +442,14 @@
   },
   "footer.builtWith": {
     "message": "Built with"
+  },
+  "navbar.home": {
+    "message": "Home"
+  },
+  "navbar.projects": {
+    "message": "Projekte"
+  },
+  "navbar.blog": {
+    "message": "Blog"
   }
 }
