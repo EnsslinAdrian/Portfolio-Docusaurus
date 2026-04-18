@@ -162,7 +162,7 @@ export default function Navbar(): React.ReactElement {
 
   return (
     <>
-      <nav className={`navbar ${styles.navbar}`}>
+      <nav className={`navbar ${styles.navbar}`} style={{ backdropFilter: 'blur(20px)', WebkitBackdropFilter: 'blur(20px)' }}>
         <div className={styles.inner}>
           <Link to="/" className={styles.brand} onClick={closeMenu}>
             <img src="/img/a-logo.svg" alt="Logo" className={styles.logo} />

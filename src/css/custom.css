@@ -35,10 +35,18 @@
 nav.navbar {
   padding: 0 !important;
   height: auto !important;
-  background: transparent !important;
+  background-color: rgba(11, 15, 26, 0.8) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
   box-shadow: none !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
   display: block !important;
   align-items: initial !important;
+}
+
+[data-theme='light'] nav.navbar {
+  background-color: rgba(248, 250, 252, 0.85) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
 }
 
 
