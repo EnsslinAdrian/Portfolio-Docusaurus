@@ -1,30 +1,106 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-navbar-height: 60px;
+  --ifm-container-width: 1140px;
+  --ifm-container-width-xl: 1400px;
+  --ifm-color-primary: #3b82f6;
+  --ifm-color-primary-dark: #2563eb;
+  --ifm-color-primary-darker: #1d4ed8;
+  --ifm-color-primary-darkest: #1e40af;
+  --ifm-color-primary-light: #60a5fa;
+  --ifm-color-primary-lighter: #93c5fd;
+  --ifm-color-primary-lightest: #bfdbfe;
+  --ifm-color-primary-rgb: 59, 130, 246;
+  --accent-color-rgb: 139, 92, 246;
+  --ifm-background-color: #f8fafc;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #00d4ff;
+  --ifm-color-primary-dark: #00b8e6;
+  --ifm-color-primary-darker: #00a3cc;
+  --ifm-color-primary-darkest: #007a99;
+  --ifm-color-primary-light: #33ddff;
+  --ifm-color-primary-lighter: #66e5ff;
+  --ifm-color-primary-lightest: #99eeff;
+  --ifm-color-primary-rgb: 0, 212, 255;
+  --accent-color-rgb: 168, 85, 247;
+  --ifm-background-color: #0b0f1a;
+}
+
+.navbar__inner {
+  display: none;
+}
+
+/* Reset Docusaurus Infima-Styles die durch die .navbar Klasse kommen */
+nav.navbar {
+  padding: 0 !important;
+  height: auto !important;
+  background-color: rgba(11, 15, 26, 0.8) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  display: block !important;
+  align-items: initial !important;
+}
+
+[data-theme='light'] nav.navbar {
+  background-color: rgba(248, 250, 252, 0.85) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
+}
+
+
+
+.homepage-main {
+  position: relative;
+  min-height: 100vh;
+  background: transparent;
+  isolation: isolate;
+  padding: 0 16px;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 2.5rem;
+  height: 100%;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--ifm-color-primary), #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+/* Docs & Blog: Breite begrenzen, top spacing hinzufügen */
+.main-wrapper {
+  max-width: var(--ifm-container-width);
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2rem 34px 3rem 34px;
+}
+
+@media (min-width: 1440px) {
+  .main-wrapper {
+    max-width: var(--ifm-container-width-xl);
+  }
+}
+
+@media (max-width: 996px) {
+  .main-wrapper {
+    padding: 1.5rem 24px 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-wrapper {
+    padding: 1rem 16px 2rem;
+  }
 }

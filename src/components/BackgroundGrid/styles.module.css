@@ -1,0 +1,67 @@
+.wrapper {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: var(--ifm-background-color);
+  overflow: hidden;
+  background-image: radial-gradient(circle at center, rgba(var(--ifm-color-primary-rgb), 0.05) 0%, transparent 60%);
+}
+
+.staticGrid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(var(--ifm-color-primary-rgb), 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(var(--ifm-color-primary-rgb), 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+
+  mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+  -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+}
+
+.impulseContainer {
+  position: absolute;
+  inset: 0;
+  mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+  -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+}
+
+.hLine {
+  position: absolute;
+  left: 0;
+  width: 250px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--ifm-color-primary), transparent);
+  box-shadow: 0 0 8px var(--ifm-color-primary);
+  transform: translateY(-50%);
+  will-change: transform, opacity;
+}
+
+.vLine {
+  position: absolute;
+  top: 0;
+  width: 2px;
+  height: 250px;
+  background: linear-gradient(180deg, transparent, rgba(var(--accent-color-rgb, 168, 85, 247), 1), transparent);
+  box-shadow: 0 0 8px rgba(var(--accent-color-rgb, 168, 85, 247), 1);
+  transform: translateX(-50%);
+  will-change: transform, opacity;
+}
+
+[data-theme='light'] .wrapper {
+  background-image: radial-gradient(circle at center, rgba(var(--ifm-color-primary-rgb), 0.08) 0%, transparent 60%);
+}
+
+[data-theme='light'] .staticGrid {
+  background-image:
+    linear-gradient(rgba(var(--ifm-color-primary-rgb), 0.15) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(var(--ifm-color-primary-rgb), 0.15) 1px, transparent 1px);
+}
+
+[data-theme='light'] .hLine {
+  box-shadow: 0 0 10px rgba(var(--ifm-color-primary-rgb), 0.6);
+}
+
+[data-theme='light'] .vLine {
+  box-shadow: 0 0 10px rgba(var(--accent-color-rgb, 168, 85, 247), 0.6);
+}

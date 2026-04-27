@@ -1,0 +1,22 @@
+{
+  "title": {
+    "message": "Adrian Enßlin",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Adrian Enßlin Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Projekte": {
+    "message": "Projekte",
+    "description": "Navbar item with label Projekte"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}

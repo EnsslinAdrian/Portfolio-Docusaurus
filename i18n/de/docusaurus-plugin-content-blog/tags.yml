@@ -1,0 +1,63 @@
+journey:
+  label: Journey
+  permalink: /journey
+
+anfang:
+  label: Anfang
+  permalink: /anfang
+
+html:
+  label: HTML
+  permalink: /html
+
+css:
+  label: CSS
+  permalink: /css
+
+javascript:
+  label: JavaScript
+  permalink: /javascript
+
+developer-akademie:
+  label: Developer Akademie
+  permalink: /developer-akademie
+
+zertifikat:
+  label: Zertifikat
+  permalink: /zertifikat
+
+frontend:
+  label: Frontend
+  permalink: /frontend
+
+angular:
+  label: Angular
+  permalink: /angular
+
+job:
+  label: Job
+  permalink: /job
+
+fullstack:
+  label: Fullstack
+  permalink: /fullstack
+
+fs-gmbh:
+  label: F+S GmbH
+  permalink: /fs-gmbh
+
+backend:
+  label: Backend
+  permalink: /backend
+
+devsecops:
+  label: DevSecOps
+  permalink: /devsecops
+
+freelance:
+  label: Freelance
+  permalink: /freelance
+
+bewerbung:
+  label: Bewerbung
+  permalink: /bewerbung

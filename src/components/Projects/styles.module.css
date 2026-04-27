@@ -1,0 +1,257 @@
+.projectSection {
+  padding: 80px 0px;
+  overflow: hidden;
+}
+
+.customContainer {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.headerArea {
+  text-align: left;
+  max-width: 800px;
+  margin-bottom: 5rem;
+}
+
+.sectionBadge {
+  display: inline-flex;
+  font-family: var(--ifm-font-family-monospace);
+  padding: 6px 16px;
+  background: rgba(var(--ifm-color-primary-rgb), 0.08);
+  color: var(--ifm-color-primary);
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(var(--ifm-color-primary-rgb), 0.2);
+}
+
+.sectionTitle {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+.sectionSubtitle {
+  font-size: 1.25rem;
+  color: var(--ifm-color-emphasis-800);
+  line-height: 1.6;
+}
+
+.projectList {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+
+.projectRow {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  position: relative;
+}
+
+.rowReverse {
+  flex-direction: row-reverse;
+}
+
+.imageCol {
+  flex: 1.2;
+  position: relative;
+  z-index: 1;
+}
+
+.imageWrapper {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  background: var(--ifm-background-color);
+}
+
+.projectImg {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.imageWrapper:hover .projectImg {
+  transform: scale(1.03);
+}
+
+.imageOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.imageWrapper:hover .imageOverlay {
+  opacity: 1;
+}
+
+.textCol {
+  flex: 0.8;
+  position: relative;
+  z-index: 2;
+  margin-left: -5rem;
+}
+
+.rowReverse .textCol {
+  margin-left: 0;
+  margin-right: -5rem;
+}
+
+.glassPanel {
+  background: rgba(20, 25, 40, 0.8);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 3rem;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.cardHeader {
+  margin-bottom: 1.5rem;
+}
+
+.projectNumber {
+  display: block;
+  font-family: var(--ifm-font-family-monospace);
+  color: var(--ifm-color-primary);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+}
+
+.glassPanel h3 {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0;
+}
+
+.projectDesc {
+  font-size: 1.1rem;
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.techTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  background: rgba(var(--ifm-color-primary-rgb), 0.1);
+  color: var(--ifm-color-primary);
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  border: 1px solid rgba(var(--ifm-color-primary-rgb), 0.2);
+  font-family: var(--ifm-font-family-monospace);
+}
+
+[data-theme='light'] .glassPanel {
+  background: rgba(255, 255, 255, 0.85);
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme='light'] .glassPanel h3 {
+  color: var(--ifm-color-emphasis-900);
+}
+
+
+@media (max-width: 996px) {
+  .projectSection {
+    padding: 60px 0;
+  }
+
+  .customContainer {
+    padding: 0 24px;
+  }
+
+  .headerArea {
+    margin-bottom: 3rem;
+  }
+
+  .sectionTitle {
+    font-size: 2.8rem;
+  }
+
+  .projectList {
+    gap: 6rem;
+  }
+
+  .projectRow,
+  .rowReverse {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .imageCol {
+    width: 100%;
+  }
+
+  .textCol,
+  .rowReverse .textCol {
+    width: 90%;
+    margin: -4rem auto 0 auto;
+  }
+
+  .glassPanel {
+    padding: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projectSection {
+    padding: 48px 0;
+  }
+
+  .customContainer {
+    padding: 0 16px;
+  }
+
+  .sectionTitle {
+    font-size: 2.2rem;
+  }
+
+  .sectionSubtitle {
+    font-size: 1.1rem;
+  }
+
+  .projectList {
+    gap: 4rem;
+  }
+
+  .textCol,
+  .rowReverse .textCol {
+    width: 95%;
+    margin: -2rem auto 0 auto;
+  }
+
+  .glassPanel {
+    padding: 1.5rem;
+  }
+
+  .glassPanel h3 {
+    font-size: 1.5rem;
+  }
+}
